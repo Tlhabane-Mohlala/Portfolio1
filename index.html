@@ -16,10 +16,8 @@
 <body>
   <!-- HEADER -->
   <header class="header">
-    <a href="#home" class="logo">Portfolio<span>.</span></a>
-
+    <a href="#home" class="logo"><span></span></a>
     <i class="bx bx-menu" id="menu-icon"></i>
-
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
@@ -39,18 +37,17 @@
 
       <p>
         I build end-to-end data and analytics solutions using Python, SQL, Google Cloud Platform (BigQuery),
-        Google Looker, Power BI, Snowflake, and Databricks (PySpark) — delivering automated pipelines,
+        Google Looker, Power BI, Snowflake, and Databricks (PySpark) delivering automated pipelines,
         interactive dashboards, and machine learning models that drive real business impact.
       </p>
 
       <div class="social-media">
         <a href="https://github.com/Tlhabane-Mohlala" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="bx bxl-github"></i></a>
         <a href="https://www.linkedin.com/in/matlhomola-mohlala-764a12244" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="bx bxl-linkedin"></i></a>
-        <a href="mailto:thloksmatlhomola20@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
       </div>
 
       <div class="cta-row">
-        <a href="#" class="btn" target="_blank" rel="noreferrer">Download CV</a>
+        <a href="mailto:tlhoksmatlhomola20@gmail.com" class="btn" target="_blank" rel="noreferrer">Request my CV</a>
         <a href="#contact" class="btn ghost">Contact Me</a>
       </div>
     </div>
@@ -78,7 +75,7 @@
         I’m a data professional with a strong foundation in analytics, machine learning, and data engineering.
         I specialize in transforming complex, messy data into clear insights, reliable data pipelines,
         and predictive models that support real business decisions.
-        I enjoy working across the full data lifecycle — from data preparation and modeling to visualization
+        I enjoy working across the full data lifecycle from data preparation and modeling to visualization
         and stakeholder communication.
       </p>
 
@@ -128,14 +125,19 @@
           <span>Advanced Excel</span>
           <span>R</span>
           <span>Power BI (DAX)</span>
-          <span>Databricks (PySpark)</span>
+          <span>Databricks</span>
           <span>Snowflake</span>
+          <span>Apache Spark</span>
+          <span>Rest APIs</span>
           <span>Google Cloud (BigQuery)</span>
           <span>Google Looker / Looker Studio</span>
           <span>Git & GitHub</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Streamlit</span>
         </div>
       </div>
-
       <div class="skills-box">
         <h3>Analytics & Data</h3>
         <div class="skills-tags">
@@ -144,11 +146,11 @@
           <span>Matplotlib</span>
           <span>Seaborn</span>
           <span>Data Cleaning</span>
-          <span>Data Modeling</span>
+          <span>Predictive & Prescriptive Analytics</span>
           <span>Dashboards</span>
           <span>KPI Reporting</span>
-          <span>Automation</span>
-          <span>Stakeholder Communication</span>
+          <span>Delta Tables</span>
+          <span>Data Pipeline & Reporting Automation</span>          
         </div>
       </div>
 
@@ -161,17 +163,19 @@
           <span>XGBoost</span>
           <span>SHAP</span>
           <span>SMOTE</span>
-          <span>Supervised and Unsupervised Learning</span>
-          <span>Hyperparameter Tuning</span>
           <span>Model Evaluation</span>
           <span>Ensemble Methods</span>
           <span>Feature Engineering</span>
+          <span>Hyperparameter Tuning</span>
+          <span>Model Deployment</span>
+          <span>Model Explainability</span>
+          <span>Supervised and Unsupervised Learning</span>          
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS (NO IMAGES) -->
+  <!-- PROJECTS -->
   <section class="portfolio" id="portfolio">
     <h2 class="heading">Latest <span>Projects</span></h2>
 
@@ -220,7 +224,8 @@
           <a href="https://github.com/Tlhabane-Mohlala/hospital-readmission-prediction" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
-     <div class="portfolio-card" data-category="analytics">
+
+      <div class="portfolio-card" data-category="analytics">
         <div class="card-top">
           <i class="bx bx-bar-chart-alt"></i>
           <span class="badge">Analytics</span>
@@ -249,7 +254,22 @@
           <a href="https://github.com/Tlhabane-Mohlala/Coffee_Shop_Sales_Analysis" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
-    </div>
+
+      <div class="portfolio-card" data-category="engineering">
+        <div class="card-top">
+          <i class="bx bx-cloud-download"></i>
+          <span class="badge">Data Engineering</span>
+        </div>
+        <h4>Job Market Data Engineering Pipeline</h4>
+        <p>End-to-end pipeline that ingests job data from an external API, processes it with Spark, and stores analytics-ready tables in Delta Lake for SQL-based insights.</p>
+        <div class="tech">
+          <span class="chip">Python</span><span class="chip">PySpark</span><span class="chip">Databricks</span><span class="chip">Delta Lake</span><span class="chip">REST API</span><span class="chip">SQL</span>
+        </div>
+        <div class="card-actions">
+          <a href="https://github.com/Tlhabane-Mohlala" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </div> <!-- END PORTFOLIO CONTAINER -->
   </section>
 
   <!-- CONTACT -->
@@ -297,7 +317,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
