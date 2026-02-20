@@ -11,6 +11,101 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+  
+  <!-- Additional inline styles for competencies with proper alignment -->
+  <style>
+    .lead {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .competency-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.2rem;
+      margin: 2rem 0;
+      text-align: left;
+    }
+
+    .comp-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem;
+      background: rgba(0, 191, 255, 0.03);
+      border-radius: 8px;
+      border-left: 3px solid transparent;
+      transition: all 0.3s;
+      text-align: left;
+    }
+
+    .comp-item:hover {
+      border-left-color: var(--main-color, #00bfff);
+      background: rgba(0, 191, 255, 0.08);
+      transform: translateX(5px);
+    }
+
+    .comp-icon {
+      font-size: 1.2rem;
+      font-weight: bold;
+      min-width: 25px;
+      color: var(--main-color, #00bfff);
+      line-height: 1.4;
+      text-align: left;
+    }
+
+    .comp-item div {
+      flex: 1;
+      text-align: left;
+    }
+
+    .comp-item strong {
+      display: block;
+      margin-bottom: 0.2rem;
+      font-size: 0.95rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .comp-item small {
+      color: #aaa;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      display: block;
+      text-align: left;
+      font-weight: normal;
+    }
+
+    .highlight {
+      color: var(--main-color, #00bfff);
+    }
+
+    .about-content h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .about-content p {
+      text-align: left;
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+
+    .about-content .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    /* Ensure all text in about section is left-aligned */
+    .about-content,
+    .about-content * {
+      text-align: left;
+    }
+  </style>
 </head>
 
 <body>
@@ -54,30 +149,104 @@
 
     <div class="home-img">
       <div class="hex-wrap" title="Click to view photo">
-        <img id="profileImg" src="profile.jpg" alt="Matlhomola Mohlala" />
+        <img id="profileImg" src="profile1.jpg" alt="Matlhomola Mohlala" />
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT - UPDATED WITH COMPETENCIES (PROPER ALIGNMENT) -->
   <section class="about" id="about">
     <div class="about-img">
       <div class="hex-small">
-        <img src="profile.jpg" alt="Matlhomola Mohlala" />
+        <img src="profile1.jpg" alt="Matlhomola Mohlala" />
       </div>
     </div>
-
     <div class="about-content">
       <h2 class="heading">About <span>Me</span></h2>
-      <h3>Data Professional</h3>
+      <p class="lead">I'm a data professional with a strong foundation in analytics, machine learning, and data engineering. I specialize in transforming complex, messy data into clear insights, reliable data pipelines, and predictive models that support real business decisions. I enjoy working across the full data lifecycle—from data preparation and modeling to visualization and stakeholder communication—always with an eye on business impact and measurable results.</p>
+      <p>But technical skills are only half the story. Here's what sets me apart:</p>
 
-      <p>
-        I’m a data professional with a strong foundation in analytics, machine learning, and data engineering.
-        I specialize in transforming complex, messy data into clear insights, reliable data pipelines,
-        and predictive models that support real business decisions.
-        I enjoy working across the full data lifecycle from data preparation and modeling to visualization
-        and stakeholder communication.
-      </p>
+      <div class="competency-grid">
+        <div class="comp-item">
+          <span class="comp-icon">→</span>
+          <div>
+            <strong>Translating business requirements</strong>
+            <small>I take unclear requirements and turn them into clear, data-based solutions that solve real problems</small>
+          </div>
+        </div>
+        
+        <div class="comp-item">
+          <span class="comp-icon">→</span>
+          <div>
+            <strong>Presenting to non-technical stakeholders</strong>
+            <small>I make complex ML results clear and actionable through visual storytelling</small>
+          </div>
+        </div>
+        
+        <div class="comp-item">
+          <span class="comp-icon">→</span>
+          <div>
+            <strong>Aligning with business KPIs</strong>
+            <small>Every ML output I create ties directly to measurable business metrics</small>
+          </div>
+        </div>
+        
+        <div class="comp-item">
+          <span class="comp-icon">→</span>
+          <div>
+            <strong>Clear communication</strong>
+            <small>I communicate insights through compelling narratives that executives understand</small>
+          </div>
+        </div>
+        
+        <div class="comp-item">
+          <span class="comp-icon">→</span>
+          <div>
+            <strong>Planning & organizing</strong>
+            <small>I manage complex projects from requirements gathering to deployment</small>
+          </div>
+        </div>
+        
+        <div class="comp-item">
+          <span class="comp-icon">→</span>
+          <div>
+            <strong>Managing deadlines</strong>
+            <small>I deliver on time, even under pressure and tight timelines</small>
+          </div>
+        </div>
+        
+        <div class="comp-item">
+          <span class="comp-icon">→</span>
+          <div>
+            <strong>Building relationships</strong>
+            <small>I earn trust through clear communication and cross-team collaboration</small>
+          </div>
+        </div>
+        
+        <div class="comp-item">
+          <span class="comp-icon">→</span>
+          <div>
+            <strong>Resilience under pressure</strong>
+            <small>I stay calm and focused when stakes are high and timelines are tight</small>
+          </div>
+        </div>
+
+        <div class="comp-item">
+          <span class="comp-icon">→</span>
+          <div>
+            <strong>Analysis & problem solving</strong>
+            <small>I break down complex problems into actionable solutions</small>
+          </div>
+        </div>
+
+        <div class="comp-item">
+          <span class="comp-icon">→</span>
+          <div>
+            <strong>Visual storytelling</strong>
+            <small>I create dashboards and presentations that tell clear data stories</small>
+          </div>
+        </div>
+      </div> 
 
       <a href="#portfolio" class="btn">View Work</a>
     </div>
@@ -266,7 +435,7 @@
           <span class="chip">Python</span><span class="chip">PySpark</span><span class="chip">Databricks</span><span class="chip">Delta Lake</span><span class="chip">REST API</span><span class="chip">SQL</span>
         </div>
         <div class="card-actions">
-          <a href="https://github.com/Tlhabane-Mohlala/job-market-data-engineering-pipeline" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/Tlhabane-Mohlala" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </div> <!-- END PORTFOLIO CONTAINER -->
@@ -315,6 +484,12 @@
 
   <!-- JS -->
   <script src="script.js"></script>
+  
+  <!-- Update copyright year -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+  </script>
 </body>
 </html>
-
