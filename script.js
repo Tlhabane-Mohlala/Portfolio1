@@ -70,7 +70,7 @@ if (typeof ScrollReveal !== "undefined") {
 /*==================== typed js ====================*/
 if (typeof Typed !== "undefined") {
   new Typed(".multiple-text", {
-    strings: ["Data Analyst", "Data Scientist", "Data Engineer"],
+    strings: ["Data Scientist"],
     typeSpeed: 70,
     backSpeed: 45,
     backDelay: 1200,
@@ -90,3 +90,4 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   window.scrollTo({ top: 0, left: 0, behavior: "auto" });
 });
+
