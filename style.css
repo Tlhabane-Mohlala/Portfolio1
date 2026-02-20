@@ -211,7 +211,7 @@ section {
   margin-top: 1.6rem;
 }
 
-/* HEX PHOTO */
+/* ===== FIXED HEX PHOTO - FACE UP ===== */
 .home-img {
   display: flex;
   justify-content: center;
@@ -224,24 +224,28 @@ section {
   background: rgba(0, 238, 255, 0.22);
   border: 2px solid rgba(0, 238, 255, 0.5);
   clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 0 3.8rem rgba(0, 238, 255, 0.45);
   transition: 0.25s ease;
+  overflow: hidden;
 }
+
 .hex-wrap:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 5.2rem rgba(0, 238, 255, 0.65);
   cursor: pointer;
 }
+
 .hex-wrap img {
-  width: 92%;
-  height: 92%;
+  width: 85%;
+  height: 85%;
   object-fit: cover;
-  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+  transform: rotate(-90deg) scale(1.2);
 }
 
-/* ABOUT */
+/* ===== FIXED ABOUT HEX - FACE UP ===== */
 .about {
   display: flex;
   justify-content: center;
@@ -252,7 +256,11 @@ section {
   border-bottom: 1px solid var(--border);
 }
 
-.about-img { display: flex; justify-content: center; align-items: center; }
+.about-img { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
 
 .hex-small {
   width: 260px;
@@ -260,18 +268,24 @@ section {
   background: rgba(0, 238, 255, 0.14);
   border: 2px solid rgba(0, 238, 255, 0.45);
   clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 0 2.8rem rgba(0, 238, 255, 0.35);
-}
-.hex-small img {
-  width: 92%;
-  height: 92%;
-  object-fit: cover;
-  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+  overflow: hidden;
 }
 
-.about-content h2 { text-align: left; line-height: 1.2; }
+.hex-small img {
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+  transform: rotate(-90deg) scale(1.2);
+}
+
+.about-content h2 { 
+  text-align: left; 
+  line-height: 1.2; 
+}
 .about-content h3 {
   font-size: 2.2rem;
   color: var(--muted);
@@ -378,7 +392,7 @@ section {
   transform: translateY(-1px);
 }
 
-/* PORTFOLIO (NO IMAGES) */
+/* PORTFOLIO */
 .portfolio {
   background: rgba(50, 57, 70, 0.12);
   border-top: 1px solid var(--border);
@@ -583,4 +597,4 @@ section {
   html { font-size: 56%; }
   .hex-wrap { width: 260px; height: 260px; }
   .hex-small { width: 220px; height: 220px; }
-}
+}g
